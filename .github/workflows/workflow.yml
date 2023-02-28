@@ -1,0 +1,19 @@
+name: React demodeployaction
+
+on:
+  push:
+    branches:
+     - "master"
+
+  jobs:
+    build:
+      runs-on: ubuntu-latest
+      strategy:
+        matrix:
+          node-version: 16.15.1
+
+    steps:
+      - uses: actions/checktout@v1
+      -run : npm install
+      -run: npm run build
+      - run: npm test
