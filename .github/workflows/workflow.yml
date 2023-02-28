@@ -5,15 +5,15 @@ on:
     branches:
       - "main"
 
-  jobs:
-    build:
-      runs-on: ubuntu-latest
-      strategy:
-        matrix:
-          node-version: [16.x]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16.x]
 
-    steps:
-      - uses: actions/checktout@v1
-      - run: npm install
-      - run: npm run build
-      - run: npm test
+  steps:
+    - uses: actions/checktout@v1
+    - run: npm install
+    - run: npm run build
+    - run: npm test
