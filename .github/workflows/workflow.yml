@@ -1,9 +1,9 @@
-name: React demodeployaction
+name: React CI
 
 on:
   push:
     branches:
-      - "main"
+      - "master"
 
 jobs:
   build:
@@ -11,9 +11,10 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version: [15.x]
 
-  steps:
-    - uses: actions/checktout@v1
-    - run: npm install
-    - run: npm run build
+    steps:
+      - uses: actions/checkout@v1
+      - run: npm install
+      - run: npm run build
+      - run: npm tes
