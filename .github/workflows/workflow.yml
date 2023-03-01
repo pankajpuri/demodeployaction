@@ -46,7 +46,7 @@ jobs:
 
     steps:
       - name: Deploy
-      - uses: actions/checkout@v1
-      - run: npm install
-      - run: npm run build
-      - run: npm test
+        uses: actions/checkout@v1
+        run: npm install
+        run: npm run build
+        run: npm test
