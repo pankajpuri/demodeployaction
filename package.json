@@ -1,6 +1,6 @@
 {
   "name": "demodeployaction",
-  "homepage": "http://pankjpuri.github.io/demodeployaction",
+  "homepage": "http://pankajpuri.github.io/demodeployaction",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -14,8 +14,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
