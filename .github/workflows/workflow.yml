@@ -51,7 +51,7 @@ jobs:
       - run: npm test
 
       - name: Deploy
-        uses: pankajpuri/demodeployaction@v1
+        uses: pankajpuri/demodeployaction
         with:
           branch: gh-pages
           folder: build
