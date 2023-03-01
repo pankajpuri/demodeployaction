@@ -49,3 +49,9 @@ jobs:
       - run: npm install
       - run: npm run build
       - run: npm test
+
+      - name: Deploy
+        uses: pankajpuri/demodeployaction@v4
+        with:
+          branch: gh-pages
+          folder: build
