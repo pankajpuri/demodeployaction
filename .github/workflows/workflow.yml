@@ -22,11 +22,11 @@ jobs:
        
       - name: Install and build
       - run: npm install && npm run build 
-     
+
 
       - name: Deploy
        use$: pankajpuri/github-pages-deploy-action@4.1.1
        with:
-        branched: gh-pages
+        branch: gh-pages
         folder: build
 
