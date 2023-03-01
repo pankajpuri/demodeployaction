@@ -99,12 +99,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
       - name: Install and build
-        run: npm install
-        run: npm run build
-        run: npm test
+      - run: npm install
+      - run: npm run build
+      - run: npm test
 
       - name: Deploy
-        uses: pankajpuri/demodeployaction@v4.1.1
+        uses: pankajpuri/demodeployaction@v1
         with:
           branch: gh-pages
           folder: build
